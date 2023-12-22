@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		17470EA82B3608F0006F0235 /* ofxCrvsEdg.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17470EA62B3608F0006F0235 /* ofxCrvsEdg.cpp */; };
+		1755BD9A2B361BB000701B57 /* ofxCrvsLsjs.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1755BD982B361BB000701B57 /* ofxCrvsLsjs.cpp */; };
 		17B1D9952B34CDD400F0A544 /* ofxCrvsUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17B1D9932B34CDC200F0A544 /* ofxCrvsUtils.cpp */; };
 		17D5441B2B34D64D0040090B /* ofxCrvsWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17D544192B34D64D0040090B /* ofxCrvsWindow.cpp */; };
 		"B2C45E80-FE85-4038-8017-E9EF5F805C82" /* ofxCrvsOps.cpp in Sources */ = {isa = PBXBuildFile; fileRef = "A3E90BFF-51C2-4F65-A04E-ACFB226DC2D5" /* ofxCrvsOps.cpp */; };
@@ -37,6 +39,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		17470EA62B3608F0006F0235 /* ofxCrvsEdg.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCrvsEdg.cpp; sourceTree = "<group>"; };
+		17470EA72B3608F0006F0235 /* ofxCrvsEdg.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ofxCrvsEdg.hpp; sourceTree = "<group>"; };
+		1755BD982B361BB000701B57 /* ofxCrvsLsjs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCrvsLsjs.cpp; sourceTree = "<group>"; };
+		1755BD992B361BB000701B57 /* ofxCrvsLsjs.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ofxCrvsLsjs.hpp; sourceTree = "<group>"; };
 		17B1D9932B34CDC200F0A544 /* ofxCrvsUtils.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCrvsUtils.cpp; sourceTree = "<group>"; };
 		17B1D9942B34CDC200F0A544 /* ofxCrvsUtils.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ofxCrvsUtils.hpp; sourceTree = "<group>"; };
 		17D544192B34D64D0040090B /* ofxCrvsWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxCrvsWindow.cpp; sourceTree = "<group>"; };
@@ -120,6 +126,10 @@
 				17B1D9942B34CDC200F0A544 /* ofxCrvsUtils.hpp */,
 				17D544192B34D64D0040090B /* ofxCrvsWindow.cpp */,
 				17D5441A2B34D64D0040090B /* ofxCrvsWindow.hpp */,
+				17470EA62B3608F0006F0235 /* ofxCrvsEdg.cpp */,
+				17470EA72B3608F0006F0235 /* ofxCrvsEdg.hpp */,
+				1755BD982B361BB000701B57 /* ofxCrvsLsjs.cpp */,
+				1755BD992B361BB000701B57 /* ofxCrvsLsjs.hpp */,
 			);
 			name = src;
 			path = ../../../addons/ofxCrvs/src;
@@ -219,9 +229,11 @@
 				17B1D9952B34CDD400F0A544 /* ofxCrvsUtils.cpp in Sources */,
 				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
 				E4B69E210A3A1BDC003C02F2 /* ofApp.cpp in Sources */,
+				17470EA82B3608F0006F0235 /* ofxCrvsEdg.cpp in Sources */,
 				"B9E7B982-7624-41E3-908D-DC9417409B8B" /* ofxCrvsCrv.cpp in Sources */,
 				"B2C45E80-FE85-4038-8017-E9EF5F805C82" /* ofxCrvsOps.cpp in Sources */,
 				17D5441B2B34D64D0040090B /* ofxCrvsWindow.cpp in Sources */,
+				1755BD9A2B361BB000701B57 /* ofxCrvsLsjs.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

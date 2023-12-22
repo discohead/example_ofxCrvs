@@ -23,7 +23,7 @@ public:
     void dragEvent(ofDragInfo dragInfo) override;
     void gotMessage(ofMessage msg) override;
     
-    ofxCrvs::Crv crv;
+    ofxCrvs::Lsjs lsjs;
         
 		
 };

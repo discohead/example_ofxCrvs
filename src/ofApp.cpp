@@ -5,10 +5,12 @@ using namespace ofxCrvs;
 //--------------------------------------------------------------
 void ofApp::setup() {
     Ops ops = Ops();
-    FloatOp sine = ops.sine(0.9f);
-    crv = Crv(sine);
-    crv.resolution = 100;
-    crv.quantization = 10;
+    
+    FloatOp sine = ops.sine();
+    FloatOp fbSine = ops.sine();
+    std::shared_ptr<Crv> xCrv = Crv::create(sine, 1.f, 6.f, 0.f, 0.f);
+    std::shared_ptr<Crv> yCrv = Crv::create(fbSine, 1.f, 7.f, 0.5f, 0.f);
+    lsjs = Lsjs(xCrv, yCrv);
 }
 
 //--------------------------------------------------------------
@@ -18,16 +20,16 @@ void ofApp::update(){
 
 //--------------------------------------------------------------
 void ofApp::draw(){
-    ofBackground(0);
+    ofBackground(100);
     ofSetColor(255);
     ofSetLineWidth(3);
     ofNoFill();
-    int resolution = crv.resolution;
-    for (int i = 0; i < resolution; i++) {
-        float x = (float)i / (float)resolution;
-        float y = crv.apply(x);
-        ofDrawCircle(x * ofGetWidth(), y * ofGetHeight(), 1);
-    }
+    ofPolyline l = lsjs.polyline(1000, true, true, nullptr);
+    l.draw();
+//    std::vector<glm::vec2> points = lsjs.vectorArray(1000, true, true, nullptr);
+//    for (int i = 0; i < points.size(); i++) {
+//        ofDrawCircle(points[i], 2);
+//    }
 }
 
 //--------------------------------------------------------------
